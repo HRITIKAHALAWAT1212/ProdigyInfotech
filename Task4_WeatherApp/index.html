@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <div class="controls">
+            <input type="text" id="locationInput" placeholder="Enter city">
+            <button id="fetchWeatherBtn">Get Weather</button>
+            <button id="fetchCurrentLocationBtn">Use Current Location</button>
+            <select id="unitSelect">
+                <option value="metric">Celsius</option>
+                <option value="imperial">Fahrenheit</option>
+            </select>
+        </div>
+        <div class="weather-info" id="weatherInfo">
+            <p id="location">Location: </p>
+            <p id="temperature">Temperature: </p>
+            <p id="conditions">Conditions: </p>
+            <p id="humidity">Humidity: </p>
+            <p id="windSpeed">Wind Speed: </p>
+        </div>
+        <div class="forecast">
+            <h2>Hourly Forecast</h2>
+            <div id="hourlyForecast"></div>
+            <h2>Daily Forecast</h2>
+            <div id="dailyForecast"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
